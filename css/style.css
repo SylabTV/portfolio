@@ -979,37 +979,39 @@ body.light-mode .theme-toggle:hover .theme-toggle-track {
   }
 
   section {
-    height: calc(100vh - 60px);
-    min-height: 0;
+    height: auto;
+    min-height: calc(100vh - 60px);
     padding: 24px 0;
     scroll-margin-top: 60px;
     overflow-y: auto;
   }
 
   .presentation {
-    height: calc(100vh - 60px);
-    min-height: 0;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    height: auto;
+    min-height: calc(100vh - 60px);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: flex-start;
   }
 
   .presentation h1 {
-    font-size: clamp(1.8rem, 8vw, 3rem);
-    margin-bottom: 40px;
+    font-size: clamp(1.4rem, 7vw, 2.2rem);
+    margin-bottom: 12px;
   }
 
   .hero-label {
-    font-size: 0.45rem;
-    gap: 10px;
+    font-size: 0.4rem;
+    gap: 8px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 16px;
   }
 
-  /* hero passe en colonne : texte / photo / competences */
+  /* hero passe en colonne : photo / texte / competences */
   .hero-layout {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    gap: 32px;
+    gap: 16px;
     text-align: center;
   }
 
@@ -1019,7 +1021,9 @@ body.light-mode .theme-toggle:hover .theme-toggle-track {
   }
 
   .miniabout p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 14px;
   }
 
   .photo-wrapper {
@@ -1028,8 +1032,8 @@ body.light-mode .theme-toggle:hover .theme-toggle-track {
   }
 
   .myphoto {
-    width: 220px;
-    height: 280px;
+    width: 160px;
+    height: 200px;
     margin-top: 0;
     position: static;
     right: auto;
@@ -1040,6 +1044,14 @@ body.light-mode .theme-toggle:hover .theme-toggle-track {
     order: 3;
     padding: 0;
     text-align: center;
+  }
+
+  .minicompetences ul {
+    margin-bottom: 14px;
+  }
+
+  .minicompetences li {
+    padding: 5px 0;
   }
 
   .button-voirplus {
@@ -1059,6 +1071,12 @@ body.light-mode .theme-toggle:hover .theme-toggle-track {
   /* competences 1 colonne */
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skill-card p {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 1;
   }
 
   /* contact form inputs en colonne */
@@ -1091,12 +1109,12 @@ body.light-mode .theme-toggle:hover .theme-toggle-track {
   }
 
   .presentation h1 {
-    font-size: clamp(1.5rem, 9vw, 2.2rem);
+    font-size: clamp(1.2rem, 8vw, 1.8rem);
   }
 
   .myphoto {
-    width: 180px;
-    height: 230px;
+    width: 130px;
+    height: 165px;
   }
 
   .stat {
